@@ -5,14 +5,17 @@ import javax.security.auth.login.LoginException;
 
 public class Main {
 
+
+    public static final String PREFIX = "...";
+
     public static void main(String[] args) throws LoginException {
 
-        String token = "put your token here";
+        String token = "OTYwNjQ4MjUxMzMyMjM1MzE2.GyKpCZ.VCy0i7dOsNzWMbBAt2YLSXzjWW7sf_KT1GMUP8";
 
         JDA jdaBuilder = JDABuilder.createDefault(token).build();
 
         jdaBuilder.addEventListener(new MyHelloCommand());
-
+        jdaBuilder.addEventListener(new StatsCommand());
     }
 
 }
