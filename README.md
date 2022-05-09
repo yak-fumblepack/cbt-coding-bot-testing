@@ -2,8 +2,9 @@
 
 **Creating a discord bot in Java!**
 
-| Week | Recap |
-| --- | --- |
+| Week | Recap                                                                |
+| --- |----------------------------------------------------------------------|
 | 1 | Setting up our development environment and creating our first command |
+| 2| How to persist data to a JSON file                                   |
 
 
