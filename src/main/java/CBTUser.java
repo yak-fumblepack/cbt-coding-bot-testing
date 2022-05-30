@@ -43,7 +43,7 @@ public class CBTUser {
         this.messagesSent = messagesSent;
     }
 
-    public JSONObject getUsersData() throws IOException, ParseException {
+    public static JSONObject getUsersData() throws IOException, ParseException {
         JSONParser parser = new JSONParser();
         Object currFile = parser.parse(new FileReader("src/main/java/data.json"));
         JSONObject usersDataObj = (JSONObject) currFile;
@@ -51,7 +51,7 @@ public class CBTUser {
     }
 
 
-    public boolean openUserInDBIsOpened(String id) throws IOException, ParseException {
+    public static boolean openUserInDBIsOpened(String id) throws IOException, ParseException {
         JSONObject usersData = getUsersData();
         JSONObject userBody = new JSONObject();
 
